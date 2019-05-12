@@ -1,5 +1,6 @@
 Flask
 Flask-Session
 psycopg2
+pg8000
 SQLAlchemy
 
