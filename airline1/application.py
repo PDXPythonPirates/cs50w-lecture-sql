@@ -52,3 +52,11 @@ def flight(flight_id):
     passengers = db.execute("SELECT name FROM passengers WHERE flight_id = :flight_id",
                             {"flight_id": flight_id}).fetchall()
     return render_template("flight.html", flight=flight, passengers=passengers)
+
+
+def main():
+    app.run(debug=True)
+
+
+if __name__ == "__main__":
+    main()
